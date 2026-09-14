@@ -25,6 +25,15 @@ user/plugins/*
 !user/plugins/.*
 user/themes/*
 !user/themes/.*
+# learn2 ships from GPM like every other theme (not tracked here), but this
+# one partial has a local bugfix (double <h1> on every docs.md page — the
+# partial printed page.title as an h1 on top of the content's own leading
+# `# Title`, plus wrapped block-level content in an invalid <p>) that needs
+# to survive a theme reinstall until it's reported/fixed upstream.
+!user/themes/learn2/
+!user/themes/learn2/templates/
+!user/themes/learn2/templates/partials/
+!user/themes/learn2/templates/partials/page.html.twig
 # security.yaml holds only policy now (twig_content, twig_sandbox, xss rules) —
 # the per-site secret moved to security-private.php in 2.0.0-beta.2
 # (GHSA-3f29-pqwf-v4j4), so the policy file is safe (and useful) to commit.
