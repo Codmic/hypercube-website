@@ -29,10 +29,16 @@ user/themes/*
 # one partial has a local bugfix (double <h1> on every docs.md page — the
 # partial printed page.title as an h1 on top of the content's own leading
 # `# Title`, plus wrapped block-level content in an invalid <p>) that needs
-# to survive a theme reinstall until it's reported/fixed upstream.
-!user/themes/learn2/
-!user/themes/learn2/templates/
-!user/themes/learn2/templates/partials/
+# to survive a theme reinstall until it's reported/fixed upstream. Each
+# level below has to be un-ignored-then-reignored in turn — negating a
+# whole ancestor directory (rather than just re-excluding its other
+# contents) exposes every sibling in it, not just the one file wanted here.
+!user/themes/learn2
+user/themes/learn2/*
+!user/themes/learn2/templates
+user/themes/learn2/templates/*
+!user/themes/learn2/templates/partials
+user/themes/learn2/templates/partials/*
 !user/themes/learn2/templates/partials/page.html.twig
 # security.yaml holds only policy now (twig_content, twig_sandbox, xss rules) —
 # the per-site secret moved to security-private.php in 2.0.0-beta.2
