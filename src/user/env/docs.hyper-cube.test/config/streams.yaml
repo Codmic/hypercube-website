@@ -1,0 +1,5 @@
+schemes:
+  page:
+    type: ReadOnlyStream
+    prefixes:
+      '': ['user://pages-docs']

@@ -1,0 +1,6 @@
+services:
+  nginx:
+    environment:
+      - NGINX_TEMPLATE=grav.conf
+    volumes:
+      - ./.warden/environments/grav/nginx/grav.conf:/etc/nginx/available.d/grav.conf:ro

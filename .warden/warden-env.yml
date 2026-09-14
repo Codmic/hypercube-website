@@ -1,0 +1,10 @@
+services:
+  php-fpm:
+    volumes:
+      - /home/leander/Projects/a-launcher/docs/website:/home/leander/Projects/a-launcher/docs/website:ro
+  php-debug:
+    volumes:
+      - /home/leander/Projects/a-launcher/docs/website:/home/leander/Projects/a-launcher/docs/website:ro
+  nginx:
+    volumes:
+      - /home/leander/Projects/a-launcher/docs/website:/home/leander/Projects/a-launcher/docs/website:ro
