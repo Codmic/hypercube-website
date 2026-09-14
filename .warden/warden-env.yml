@@ -2,9 +2,12 @@ services:
   php-fpm:
     volumes:
       - /home/leander/Projects/a-launcher/docs/website:/home/leander/Projects/a-launcher/docs/website:ro
+      - /home/leander/Projects/a-launcher/docs/changelog:/home/leander/Projects/a-launcher/docs/changelog:ro
   php-debug:
     volumes:
       - /home/leander/Projects/a-launcher/docs/website:/home/leander/Projects/a-launcher/docs/website:ro
+      - /home/leander/Projects/a-launcher/docs/changelog:/home/leander/Projects/a-launcher/docs/changelog:ro
   nginx:
     volumes:
       - /home/leander/Projects/a-launcher/docs/website:/home/leander/Projects/a-launcher/docs/website:ro
+      - /home/leander/Projects/a-launcher/docs/changelog:/home/leander/Projects/a-launcher/docs/changelog:ro
