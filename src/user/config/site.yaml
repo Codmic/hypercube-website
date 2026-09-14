@@ -1,7 +1,6 @@
-title: Grav
+title: Hypercube
 author:
-  name: Joe Bloggs
-  email: 'joe@example.com'
+  name: Leander
+  email: 'info@codmic.nl'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+    description: 'Hypercube is an Android home-screen launcher whose home screen is a rotatable 3D cube — six faces, 72 real-time procedural backgrounds, and dozens of live applets. No analytics, no ad SDKs, no accounts.'

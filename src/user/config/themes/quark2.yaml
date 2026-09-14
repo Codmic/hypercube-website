@@ -1,0 +1,8 @@
+## User override for the quark2 theme — see src/user/themes/quark2/README.md's warning
+## against editing the theme's own quark2.yaml directly (lost on theme update). Only keys
+## that differ from the theme default need to be listed here; everything else inherits.
+
+theme-mode: dark            # every background is a real-time shader designed to be seen on black
+accent-color: '#8428DF'     # matches the accent already set directly in the theme file (kept
+                             # here too so it survives a `bin/gpm update quark2`)
+blog-page: '/changelog'     # this site's one blog-style listing is the changelog, not /blog
