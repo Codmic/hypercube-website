@@ -15,7 +15,7 @@ features:
         url: 'https://docs.hyper-cube.app/applets'
     -
         icon: layer-group
-        header: '72 procedural backgrounds'
+        header: '417 procedural backgrounds'
         text: 'Every background is a real-time GLSL shader, from a plain starfield to synthwave grids to abstract mathematical art. No images, no 3D meshes.'
         url: 'https://docs.hyper-cube.app/backgrounds'
     -

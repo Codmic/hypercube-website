@@ -50,6 +50,6 @@ generated on a disposable emulator profile with only stock AOSP/Google apps inst
 | `05` | Home cube, face 1 |
 | `07` | Launcher Settings — Cube tab |
 | `08`–`09` | Launcher Settings — Backgrounds tab (performance panel, per-background sliders) |
-| `10` | Backgrounds catalog dropdown — a real slice of the 72-background list |
+| `10` | Backgrounds catalog dropdown — a real slice of the 417-background list |
 | `11` | Weather applet, with its default seeded cities (New York/LA/London — sample data, not a real user's) |
 | `12` | Compass applet |

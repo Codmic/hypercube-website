@@ -22,7 +22,7 @@ no content work — see [What already exists](#what-already-exists).
 Hypercube (`com.codmic.hypercube`) is an Android home-screen launcher whose main UI is a
 rotatable 3D cube rendered in OpenGL ES — six faces, each a grid of app icons — instead of
 the horizontally-paged 2D screens every other launcher uses. On top of that unusual core it
-has grown a large, maximalist feature set: 72 real-time GLSL procedural backgrounds (no
+has grown a large, maximalist feature set: 417 built-in real-time GLSL procedural backgrounds (no
 image assets), dozens of "applet" mini-apps that render directly on a cube face (weather,
 crypto, QR scanner, tuner, world clock, and more), a hologram long-press menu, folders,
 widgets with glass-warp distortion, notification badges, gesture mapping, a four-rung privacy
@@ -52,14 +52,14 @@ marketing site for Hypercube, and wiring it to the docs subsite that's already f
 
 ### The core tension
 
-This is a maximalist, playful, one-person hobby project (72 shader backgrounds, a cube
-combination lock, a "vault summon" alias-word search, synthesized tone feedback per
-alphabet letter in the contacts scene) — but it also needs to read as a **credible,
-installable piece of software**, not a novelty demo, or nobody will trust it enough to
-hand it launcher-level access to their phone. The design has to hold both: technical
-seriousness (permissions table, no-telemetry stance, real docs) *and* the personality
-that makes a rotating 3D cube launcher worth trying over the fifteen boring grid launchers
-already on the Play Store.
+Hypercube is already a full-featured, well-tested Android launcher, with a maximalist,
+playful personality: 417 built-in procedural backgrounds, a cube combination lock, a "vault summon"
+alias-word search, and synthesized tone feedback per alphabet letter in the contacts
+scene. The site should present it with the confidence of mature software while keeping
+the character that makes a rotating 3D cube launcher distinctive. Technical clarity
+(a permissions table, a no-telemetry stance, and real docs) should reinforce the
+launcher’s quality and make it easy for people to decide whether it belongs on their
+home screen.
 
 ### Proposed direction: quark2's restraint, Hypercube's motion, as the payload
 
@@ -78,7 +78,7 @@ Instead, spend the personality budget on **content and motion, not chrome**:
   medium/small hero classes — use a dark, large hero with the cube footage as the
   background layer and the pitch as short overlay text. This is a "show, don't tell"
   product — screenshots and a real spin/fling clip do more work than any amount of copy.
-- **Let the 72-background catalog be the site's one indulgence.** A `gallery.yaml`-driven
+- **Let the 417-background catalog be the site's one indulgence.** A `gallery.yaml`-driven
   page (see [Page inventory](#page-inventory)) showing a grid of background thumbnails,
   grouped by the same families already defined in the docs (retro-computing, synthwave,
   liminal, cosmic, cozy, performance-extremes...) is genuinely differentiated content no
@@ -131,7 +131,7 @@ marketing-voice editing:
   cube").
 - **Features grid** (quark2 `features.yaml`: icon + header + short text + link, 3–6 items)
   — pull straight from `FEATURE_LIST_AND_LAUNCHER_COMPARISON.md` §2.1–2.2: the cube itself,
-  applets, the 72-background catalog, the four-rung privacy system, widgets, gestures. Each
+  applets, the 417-background catalog, the four-rung privacy system, widgets, gestures. Each
   card's "link" can point at the matching docs chapter on `docs.hyper-cube.test`.
 - **Privacy/trust callout** — this is a real differentiator, not boilerplate: `EXTERNAL_APIS.md`
   confirms *no analytics/crash/telemetry SDK at all* (no Firebase, Crashlytics, Sentry — verified
