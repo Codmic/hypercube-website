@@ -55,8 +55,7 @@ ping, no background sync.
 |---|---|---|---|
 | `api.open-meteo.com` | Weather applet — conditions | The city's coordinates | While a Weather tile or its fullscreen view is on screen (cached 30 min) |
 | `geocoding-api.open-meteo.com` | Weather applet — add a city | The city name you typed | Tapping "+ Add city" |
-| `api.coingecko.com` | Crypto applet — prices | The coin(s) you're tracking | While a Crypto tile or its fullscreen view is on screen (cached 60s) |
-| `api.coingecko.com` | Crypto applet — search | The search text you typed | Tapping "+ Add coin" |
+| `data-proxy.hyper-cube.app` (then CoinMarketCap) | Crypto applet (USD) — prices and search | Nothing about your coins: the app downloads one shared top-200 list and searches and matches it on your phone | While a Crypto tile or its fullscreen view is on screen (cached up to 10 min) |
 | `open.er-api.com` | Unit Converter — currency mode | Nothing identifying — a single shared rate fetch | While the currency mode view is on screen (cached 12h) |
 | `duckduckgo.com` | Search bar — autocomplete suggestions | What you're typing, once you prefix a query with `/` for a web search | Each keystroke of a `/`-prefixed query |
 | Your chosen web search engine | Search bar — "search the web" | Your search query | Tapping a web-search result |

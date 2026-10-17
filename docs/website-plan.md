@@ -155,7 +155,7 @@ A Play Store (or F-Droid) listing needs a real privacy policy page, and the laun
 already has everything needed to write an accurate one without guessing:
 
 - `docs/archive/EXTERNAL_APIS.md` — authoritative inventory of every outbound network call
-  the app makes: `api.open-meteo.com` (weather), `api.coingecko.com` (crypto prices),
+  the app makes: `api.open-meteo.com` (weather), `data-proxy.hyper-cube.app` / CoinMarketCap (crypto prices),
   `open.er-api.com` (currency conversion), DuckDuckGo autocomplete, and outbound
   `ACTION_VIEW` intents (WhatsApp, Play Store). All triggered by a visible feature the user
   turned on; nothing fires in the background.
